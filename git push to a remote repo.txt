@@ -1,0 +1,39 @@
+navee_000@Naveen MINGW64 /c/Naveen/DevOps
+$ cd Doc
+
+navee_000@Naveen MINGW64 /c/Naveen/DevOps/Doc
+$ git init
+Initialized empty Git repository in C:/Naveen/DevOps/Doc/.git/
+
+navee_000@Naveen MINGW64 /c/Naveen/DevOps/Doc (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+nothing to commit
+
+navee_000@Naveen MINGW64 /c/Naveen/DevOps/Doc (master)
+$ git add --all
+
+navee_000@Naveen MINGW64 /c/Naveen/DevOps/Doc (master)
+$ git commit -m "Force"
+[master (root-commit) 5b86ef5] Force
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 SONAR Analysis in Jenkins.docx
+
+navee_000@Naveen MINGW64 /c/Naveen/DevOps/Doc (master)
+$ git remote add origin https://github.com/nkc3/ToolsDocument.git
+
+navee_000@Naveen MINGW64 /c/Naveen/DevOps/Doc (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 253.06 KiB | 14.89 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/nkc3/ToolsDocument.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+navee_000@Naveen MINGW64 /c/Naveen/DevOps/Doc (master)
