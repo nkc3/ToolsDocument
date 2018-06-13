@@ -37,3 +37,31 @@ To https://github.com/nkc3/ToolsDocument.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 navee_000@Naveen MINGW64 /c/Naveen/DevOps/Doc (master)
+=========================
+Issue:! [rejected] master -> master (fetch first)
+Ref link:https://stackoverflow.com/questions/28429819/rejected-master-master-fetch-first
+
+Issue Description:
+git push -u origin master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': naveen.chinnireddy@hotmail.com
+To https://github.com/nkc3/ToolsDocument.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/nkc3/ToolsDocument.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+Resolution:
+git fetch origin master:tmp
+git rebase tmp
+git push origin HEAD:master
+git branch -D tmp
+
+Fetch
+Create a tmp folder
+Pull
+Delete tmp folder
